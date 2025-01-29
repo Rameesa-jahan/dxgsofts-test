@@ -1,6 +1,7 @@
 import { Divider, Flex, Space } from 'antd'
 import Title from 'antd/es/typography/Title'
 import React from 'react'
+import { TwitterOutlined, InstagramOutlined } from '@ant-design/icons';
 
 const SocialInfo = () => {
     return (
@@ -9,15 +10,12 @@ const SocialInfo = () => {
                 fahey.designer@roboto.co</Title>
             <Divider style={{ margin: '16px 0px' }} />
             <Flex align='center' gap={16}>
-
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="24" height="24">
-                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                    <path d="M17 2.5h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-3a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1zM12 7.2a4.8 4.8 0 1 0 4.8 4.8A4.8 4.8 0 0 0 12 7.2zm0 6.6a1.8 1.8 0 1 1 1.8-1.8A1.8 1.8 0 0 1 12 13.8z" />
+                <TwitterOutlined size={18} />
+                <InstagramOutlined size={18} />
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="18" height="18">
+                    <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm-.34 14.11c-.08.19-.18.34-.31.44a1.34 1.34 0 0 1-1.2.2c-.3-.14-.46-.44-.37-.76.08-.27.21-.52.29-.78.28-.97.75-1.58 1.57-2.12a4.45 4.45 0 0 0 1.18-1.43c.17-.29.3-.62.43-.95.12-.31.17-.65.17-1.02a2.76 2.76 0 0 0-.9-2.08c-.35-.36-.78-.55-1.28-.55-.84 0-1.47.56-1.85 1.46-.3.68-.26 1.4.14 1.98.41.58 1.15.73 1.78.48.07-.03.1-.1.13-.17-.02.01-.04.02-.06.03-.06.06-.13.13-.19.21-.24.24-.43.51-.58.8-.34.54-.53 1.13-.56 1.78-.02.45-.05.89-.07 1.33zm-1.88 2.53c-.43.34-.99.53-1.58.53a2.63 2.63 0 0 1-2.59-2.69 2.61 2.61 0 0 1 2.74-2.56 2.59 2.59 0 0 1 2.45 3.03c-.04.33-.13.66-.26.96z" />
                 </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="24" height="24">
-                    <path d="M12 2.25c5.396 0 9.75 4.354 9.75 9.75s-4.354 9.75-9.75 9.75c-5.396 0-9.75-4.354-9.75-9.75s4.354-9.75 9.75-9.75zM10.68 9.49c-.88 1.56-2.07 4.21-.38 6.48 1.33 1.57 2.65.34 3.15-1.05 1.18-2.74-.91-5.7-2.94-4.88-2.5.92-.65 2.96-1.02 4.5-1.15 4.26-5.01 3.9-6.01 1.18-2.5-3.2-.85-4.5.25-7.1 2.67-.85 3.32 1.75 4.73 2.58 4.78 2.58 0 4.46-1.45 3.43-4.14-.56-1.82-.35-3.45.32-5.09 1.1-1.6 3.88-2.43 5.58-.28z" />
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="24" height="24">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="18" height="18">
                     <path d="M22.67 12.31c0-5.81-4.73-10.54-10.54-10.54-5.8 0-10.53 4.73-10.53 10.54 0 5.61 4.32 10.23 9.96 10.53v-7.47h-3.03v-3.06h3.03v-2.26c0-3.01 1.79-4.7 4.56-4.7 1.32 0 2.71.24 2.71.24v2.95h-1.83c-1.8 0-2.37 1.12-2.37 2.24v2.7h3.06l-.49 3.06h-2.57v7.47c5.64-.3 9.96-4.93 9.96-10.53z" />
                 </svg>
             </Flex>
