@@ -22,7 +22,7 @@ const Profile = () => {
     return (
         <Space direction='vertical' style={{ width: '100%' }}>
             <Row align="middle" justify="space-between" style={{ width: '100%' }}>
-                <Flex align='center' gap={screens.xs || screens.sm ? 12 : 20}>
+                <Flex align='center' style={{marginBottom:'10px'}} gap={screens.xs || screens.sm ? 12 : 20}>
                     <Avatar src={'/dp.jpg'} size={getAvatarSize()} />
                     <Space direction="vertical" size={screens.xs || screens.sm ? 4 : 8}>
                         <Title level={screens.xs ? 5 : 4} style={{ margin: 0, fontSize: screens.xs ? '14px' : '18px' }}>
