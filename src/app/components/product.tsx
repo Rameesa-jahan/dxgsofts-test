@@ -10,7 +10,9 @@ const { useBreakpoint } = Grid;
 
 const Product = () => {
     const [data, setData] = useState([]);
+    const [loading, setLoading] = useState(true); 
     const screens = useBreakpoint();
+
     useEffect(() => {
         axios.get('https://fakestoreapi.com/products')
             .then((response) => {
@@ -18,9 +20,11 @@ const Product = () => {
             })
             .catch(error => {
                 console.error("Error fetching the data", error);
+            })
+            .finally(() => {
+                setLoading(false); // Stop loading
             });
     }, []);
-
 
     const columns = [
         {
@@ -28,7 +32,7 @@ const Product = () => {
             dataIndex: 'title',
             key: 'title',
             render: (text: string, record: any) => (
-                <Space style={{ gap:screens.xs ?'8px' :'16px'}}>
+                <Space style={{ gap: screens.xs ? '8px' : '16px' }}>
                     <Image
                         width={screens.xs ? 50 : screens.sm ? 40 : screens.md ? 60 : 80}
                         height={screens.xs ? 50 : screens.sm ? 40 : screens.md ? 60 : 80}
@@ -37,7 +41,7 @@ const Product = () => {
                     />
                     <div>
                         <span>{text}</span>
-                        <p style={{ color: 'GrayText' }}> ui8.net/product/product-link</p>
+                        <p style={{ color: 'GrayText' }}>ui8.net/product/product-link</p>
                     </div>
                 </Space>
             ),
@@ -63,6 +67,7 @@ const Product = () => {
                 dataSource={data}
                 rowKey="id"
                 pagination={{ pageSize: 5 }}
+                loading={loading}
             />
     );
 };
